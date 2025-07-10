@@ -1,0 +1,11 @@
+<div class="velocimetro-container" [ngClass]="getVelocidad()">
+  <div class="velocimetro-display">
+    <h1>{{ speed }}</h1>
+    <span>km/h</span>
+  </div>
+  <div class="controles">
+    <button (click)="acelerar()" class="control-btn acelerar-btn">Acelerar</button>
+    <button (click)="frenar()" class="control-btn frenar-btn">Frenar</button>
+    <button (click)="reiniciar()" class="control-btn reiniciar-btn">Reiniciar</button>
+  </div>
+</div>
